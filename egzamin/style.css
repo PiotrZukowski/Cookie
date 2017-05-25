@@ -1,0 +1,40 @@
+#kontener {
+  width: 1000px;
+
+  min-height: 550px;
+
+}
+
+header{
+  background-color: #ddffaa;
+  width:100%;
+
+}
+
+#nawigacja{
+  float:left;
+
+  background-color: #213769;
+  width:40%;
+  height:550px
+}
+#panel{
+  float: left;
+  background-color: #696969;
+  width:60%;
+  height:550px
+}
+
+.nav_a {
+  display: block;
+  text-decoration: none;
+
+}
+
+button{
+  color: red;
+  background-color: black;
+}
+
+button:hover{color: black;
+background-color: red;}
