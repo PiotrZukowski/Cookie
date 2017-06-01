@@ -18,10 +18,16 @@ var ile = document.forms.fm1.day.length;
 var test = "false";
 for(var i=0;i<ile;i++)
 {
-  if(document.form.fm1.day[i].checked){
-
-  }
+  if(document.form.fm1.day[i].checked) test="true";
 }
+if (test==true){
+komunikat = komunikat + "Wybrałeś następujące dni:";
+for(var  i=0;i<ile;i++)
+{
+if(document.forms.fm1.day[i].checked)komunikat=komunikat+document.forms.fm1.day[i].value+' ';
+}
+}
+else komunikat = komunikat+"Nie wyvbrałeś żadnego zdarzenia"
 
 
 }
