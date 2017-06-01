@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formularze JS</title>
+    <script>
+function pobierzDane()
+{
+  var login = document.getElementById('login').value;
+
+
+if(document.forms.fm1.show_login.checked)
+{
+  komunikat = "Twój login:"+login+".";
+  alert(komunikat);
+}
+var ile = document.forms.fm1.day.length;
+var test = "false";
+for(var i=0;i<ile;i++)
+{
+  if(document.form.fm1.day[i].checked){
+
+  }
+}
+
+
+}
+
+    </script>
+  </head>
+  <body>
+
+    <form name='fm1'>
+      Podaj login: <input type="text" id="login" value="" /> <br /><br />
+      Pokaż login: <input type="checkbox" name="show_login" /><br />
+      <input type="button" value="Wyślij" onclick="pobierzDane();"  />
+    </form>
+    <fieldset>
+      <legend>
+        Wybierz przynajmniej jedeń dzień tygodnia
+      </legend>
+      <input type="checkbox" name="day" value="Poniedzialek"  />Poniedzialek<br />
+      <input type="checkbox" name="day" value="Wtorek"  />Wtorek<br />
+      <input type="checkbox" name="day" value="Sroda"  />Sroda<br />
+      <input type="checkbox" name="day" value="Czwartek"  />Czwartek<br />
+      <input type="checkbox" name="day" value="Piatek"  />Piatek<br />
+      <input type="checkbox" name="day" value="Sobota"  />Sobota<br />
+      <input type="checkbox" name="day" value="Niedziela"  />Niedziela<br />
+    </fieldset>
+
+  </body>
+</html>
